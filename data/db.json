@@ -21,7 +21,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
+      "characters": "Kal-El",
+      "alt_img": "https://s3.amazonaws.com/dam.smashmexico.com.mx/wp-content/uploads/2023/03/Superman-La-Verdad-Revelada-cover.jpg"
     },
     {
       "id": "dc-flash",
@@ -172,7 +173,7 @@
       "superhero": "Hulford",
       "publisher": "DC Comics",
       "alter_ego": "Hulford",
-      "first_appearance": "",
+      "first_appearance": "hola",
       "characters": "Hulford",
       "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hA_U093KZWNw1jJwH4WMjUqkfbWE7WYltw&usqp=CAU"
     },
