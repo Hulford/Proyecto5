@@ -11,27 +11,30 @@ import { Hero } from '../../interfaces/hero.interface';
   ]
 })
 export class HeroPageComponent implements OnInit{
+
   public hero?: Hero;
 
-constructor(
-  private HeroesService : HeroesService,
-private activatedRoute: ActivatedRoute,
-private router: Router,
-  ){}
+  constructor(
+    private heroesService: HeroesService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+ ) {}
   ngOnInit(): void {
-this.activatedRoute.params
-.pipe(
- // delay(3000),
-switchMap(({id}) => this.HeroesService.getHeroById(id)),
-).subscribe(hero => {
- if( !hero) return this.router.navigate(['/heroes/list']);
- this.hero=hero;
- return;
-})
+    this.activatedRoute.params
+    .pipe(
 
+      switchMap( ({ id }) => this.heroesService.getHeroById( id )),
+    )
+    .subscribe( hero => {
 
-  }
-  goBack():void{
-    this.router.navigateByUrl('heroes/list')
-  }
+      if ( !hero ) return this.router.navigate([ '/heroes/list' ]);
+console.log(hero)
+      this.hero = hero;
+      return;
+    })
+}
+
+goBack(){
+  this.router.navigateByUrl ('heroes/list')
+}
 }

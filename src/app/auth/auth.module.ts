@@ -8,6 +8,7 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 import { MaterialModule } from '../material/material.module';
 
 
+
 @NgModule({
   declarations: [
     LayoutPageComponent,
