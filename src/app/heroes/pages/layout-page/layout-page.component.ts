@@ -13,4 +13,5 @@ export class LayoutPageComponent {
     { label: 'Añadir', icon: 'add', url: './new-hero' },
     { label: 'Buscar', icon: 'search', url: './search' },
   ]
+
 }

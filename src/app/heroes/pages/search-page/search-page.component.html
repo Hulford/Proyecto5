@@ -8,15 +8,14 @@
       type="text"
       matInput
       [formControl]="searchInput"
-(input)="searchHero()"
-[matAutocomplete]="auto"
+      (input)="searchHero()"
+      [matAutocomplete]="auto"
     />
-
 
     <mat-autocomplete autoActiveFirstOption
       #auto="matAutocomplete"
-      (optionSelected)="onSelectedOption($event)"
-     >
+      (optionSelected)="onSelectedOption( $event )"
+      >
       <mat-option *ngFor="let hero of heroes" [value]="hero">
         {{ hero.superhero }}
       </mat-option>
@@ -29,6 +28,9 @@
     </mat-autocomplete>
 
   </mat-form-field>
-{{selectedHero | json}}
+
+
+  {{ selectedHero | json }}
+
 
 </div>

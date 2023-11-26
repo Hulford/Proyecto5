@@ -8,6 +8,30 @@
   ],
   "heroes": [
     {
+      "id": "dc-batman",
+      "superhero": "Batman",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne"
+    },
+    {
+      "id": "dc-superman",
+      "superhero": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Kal-El",
+      "first_appearance": "Action Comics #1",
+      "characters": "Kal-El"
+    },
+    {
+      "id": "dc-flash",
+      "superhero": "Flash",
+      "publisher": "DC Comics",
+      "alter_ego": "Jay Garrick",
+      "first_appearance": "Flash Comics #1",
+      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
+    },
+    {
       "id": "dc-green",
       "superhero": "Green Lantern",
       "publisher": "DC Comics",
@@ -151,15 +175,6 @@
       "publisher": "DC Comics",
       "alter_ego": "Hulford",
       "first_appearance": "hola",
-      "characters": "Hulford",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hA_U093KZWNw1jJwH4WMjUqkfbWE7WYltw&usqp=CAU"
-    },
-    {
-      "id": "ui-K47b",
-      "superhero": "Hulford",
-      "publisher": "DC Comics",
-      "alter_ego": "Hulford",
-      "first_appearance": "",
       "characters": "Hulford",
       "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hA_U093KZWNw1jJwH4WMjUqkfbWE7WYltw&usqp=CAU"
     }
