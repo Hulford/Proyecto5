@@ -25,8 +25,8 @@ return this.http.get<User>(`${this.baseUrl}/users/1`)
 );
 }
 
-checkAutentication(): Observable<boolean> | boolean{
-if (!localStorage.getItem('token')) return false;
+checkAutentication(): Observable<boolean>{
+if (!localStorage.getItem('token')) return of (false);
 const token = localStorage.getItem('token');
 
 
