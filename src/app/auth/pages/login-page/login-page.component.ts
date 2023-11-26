@@ -9,14 +9,21 @@ import { Router } from '@angular/router';
   ]
 })
 export class LoginPageComponent {
-constructor(
-  private AuthService: AuthService,
-  private router: Router
+
+  constructor(
+    private authService: AuthService,
+    private router: Router
   ){}
-  onLogin(): void{
-this.AuthService.login('fernando', '123456')
-.subscribe( user => {
-this.router.navigate(['/']);
-});
+
+  onLogin(): void {
+
+    this.authService.login('fernando@gmail.com','123456')
+      .subscribe( user => {
+
+        this.router.navigate(['/']);
+
+      });
+
   }
+
 }
