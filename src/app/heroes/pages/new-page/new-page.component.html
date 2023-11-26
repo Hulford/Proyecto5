@@ -1,7 +1,7 @@
 <h1>
-  {{ currentHero.id ? 'Editar' : 'Agregar' }}
-  héroe
-<small *ngIf="currentHero.id">{{ currentHero.superhero }}</small>
+ {{currentHero.id? 'Editar': 'Agregar'}}
+
+  <small *ngIf="currentHero.id">{{currentHero.superhero}} </small>
 </h1>
 
 <mat-divider class="mb-2"></mat-divider>
@@ -43,7 +43,7 @@
               matInput
               type="text"
               required
-              formControlName="first_appearance"
+              formControlName="first_apperance"
             />
           </mat-form-field>
 
@@ -104,6 +104,7 @@ formControlName="publisher"
             <mat-icon>save</mat-icon>
             Guardar
           </button>
+          <span></span>
         </div>
 
       </mat-card-content>
@@ -120,6 +121,6 @@ formControlName="publisher"
 </form>
 
 <pre>
-  {{currentHero | json}}
+
 
 </pre>

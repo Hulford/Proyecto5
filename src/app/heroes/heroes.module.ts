@@ -10,7 +10,6 @@ import { HeroesRoutingModule } from './heroes-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/heroImage.pipe';
-import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     CardComponent,
 
 //pipes
-HeroImagePipe,
- ConfirmDialogComponent
+HeroImagePipe
 
   ],
   imports: [
